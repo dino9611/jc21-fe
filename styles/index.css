@@ -2,6 +2,7 @@
   padding: 0px;
   margin: 0px;
 }
+
 .text-yellow {
   color: yellow;
 }
@@ -33,7 +34,13 @@
   flex-wrap: wrap;
 }
 .container > div {
-  width: 24%;
+  flex-basis: 24%;
+  /* flex: 24%; */
   margin: 1vh 5px;
   height: 20vh;
+  /* buat bikin tulisannya ketengah vertical horizontal */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
 }

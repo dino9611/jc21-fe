@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.jumbotron {
+  display: flex;
+
+  min-height: 98vh;
+  padding: 1vh;
+}
+
+.jumbotron > div {
+  /* background-color: yellow; */
+  /* background-color: rgb(7, 247, 247); */
+  flex-basis: 50%;
+  margin: 0px 20px;
+
+  /* flexbox lagi  */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.jumbotron > div:first-child {
+  background-color: rgb(7, 247, 247);
+}
+
+.bg-container {
+  background-color: crimson;
+
+  flex-basis: 30vh;
+}
+
+.bg-container:nth-child(2) {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+.bg-container:nth-child(2) > div {
+  background-color: salmon;
+  flex-basis: 48%;
+}
