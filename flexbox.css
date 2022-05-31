@@ -23,7 +23,7 @@
 }
 
 .jumbotron > div:first-child {
-  background-color: rgb(7, 247, 247);
+  /* background-color: rgb(7, 247, 247); */
 }
 
 .bg-container {
@@ -40,4 +40,38 @@
 .bg-container:nth-child(2) > div {
   background-color: salmon;
   flex-basis: 48%;
+}
+
+.jumbotron2 {
+  height: 20vh;
+  background-color: brown;
+}
+
+.card-container > div {
+  background-color: yellow;
+  width: 48%;
+  flex-basis: 48%;
+  margin-right: 7.5px;
+}
+
+.mt-2 {
+  margin-top: 3px;
+}
+
+.mb-2 {
+  margin-bottom: 3px;
+}
+
+.card-container > div:first-child {
+  flex-basis: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 20%;
+  height: 100%;
+  background-color: aqua;
 }
