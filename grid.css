@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'header menu menu menu'
+    'hero hero hero hero'
+    'hero hero hero hero'
+    'hero hero hero hero'
+    'hero hero hero hero'
+    'main main . image'
+    'main main . image'
+    'main main . extra'
+    'main main . extra'
+    'banner banner banner banner';
+  min-height: 100vh;
+}
+
+.header {
+  /* grid-row: 1 / span 1;
+  grid-column: 1 / span 1; */
+  grid-area: header;
+}
+.menu {
+  /* grid-row: 1 / span 1;
+  grid-column: 2 / span 3; */
+  grid-area: menu;
+}
+.hero {
+  /* grid-row: 2 / span 4;
+  grid-column: 1 / span 4; */
+  grid-area: hero;
+}
+
+.main {
+  /* grid-row: 6 / span 4;
+  grid-column: 1 / span 2; */
+  grid-area: main;
+}
+
+.image {
+  /* grid-row: 6 / span 2;
+  grid-column: 4 / span 1; */
+  grid-area: image;
+}
+.banner {
+  /* grid-row: 8 / span 2;
+  grid-column: 4 / span 1; */
+  grid-area: banner;
+}
+
+.extra {
+  /* grid-row: 10 / span 4;
+  grid-column: 1 / span 4; */
+  grid-area: extra;
+}
+.bg-1 {
+  background-color: cadetblue;
+}
+
+.bg-2 {
+  background-color: rgb(144, 160, 95);
+}
+
+.bg-3 {
+  background-color: rgb(160, 95, 139);
+}
+
+.bg-4 {
+  background-color: rgb(160, 95, 104);
+}
+
+/* tablets */
+@media only screen and (max-width: 768px) {
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header '
+      'menu'
+      'hero '
+      'hero '
+      'hero'
+      'main'
+      'main '
+      'banner'
+      'banner'
+      'extra'
+      'extra'
+      'image';
+  }
+}
