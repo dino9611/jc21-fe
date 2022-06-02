@@ -1,5 +1,81 @@
 * {
-  font-family: 'Arvo', serif;
+  font-family: 'DM Sans', 'Arvo', serif;
   margin: 0;
   padding: 0;
 }
+
+:root {
+  /* font-size: 30px; */
+  --text-logo-color: #0f2137;
+  --text-primary-color: #02073e;
+  --background-primary-color: #56bbd0;
+  --text-secondary-color: #fff;
+}
+
+.container {
+  padding: 0px 15%;
+}
+
+.bg-1 {
+  background-color: cadetblue;
+}
+
+.bg-2 {
+  background-color: rgb(144, 160, 95);
+}
+
+.bg-3 {
+  background-color: rgb(160, 95, 139);
+}
+
+.bg-4 {
+  background-color: rgb(160, 95, 104);
+}
+
+.bg-primary {
+  background-color: var(--background-primary-color);
+}
+
+.icon-primary {
+  color: var(--background-primary-color);
+}
+
+/* header start */
+.header {
+  padding-top: 4vh;
+  padding-bottom: 2vh;
+
+  display: flex;
+}
+.menu-header {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 35%;
+  text-transform: capitalize;
+  padding-top: 2px;
+  color: var(--text-primary-color);
+}
+
+.logo {
+  font-size: 18px;
+  margin-right: 6%;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--text-logo-color);
+}
+
+/* header end */
+
+/* illu start */
+.illu {
+  background-image: url(./assets/bg.svg);
+  height: 95vh;
+  background-size: contain;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+/* illu end */
