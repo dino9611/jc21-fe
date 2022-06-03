@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwindcss</title>
+
+    <script
+      src="https://kit.fontawesome.com/45f3d71b0a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./tailwind.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              jamal: 'teal',
+              primary: '#0F2137',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="md:container mt-5 md:mx-auto md:px-[8%]">
+      <div class="grid md:gap-4 grid-cols-1 md:grid-cols-2 h-[70vh]">
+        <div class="">
+          <img
+            src="./image 106.png"
+            class="md:h-[80vh] object-cover"
+            width="100%"
+            alt="gambar aja"
+          />
+        </div>
+        <div class="-mt-14 md:mt-0 md:py-14 py-3 px-5">
+          <h1 class="text-3xl md:w-[90%] text-primary font-bold">
+            Customer support is our main priority with their hundred percent
+            satisfaction.
+          </h1>
+          <div class="mt-5 md:w-[90%] leading-loose">
+            Get your tests delivered at let home collect sample from the victory
+            of the managments that supplies best design system guidelines ever.
+          </div>
+          <div class="grid md:w-[90%] mt-5 grid-cols-2">
+            <div class="my-2">
+              <span class="text-cyan-400"
+                ><i class="fa-solid fa-circle-check"></i>
+              </span>
+              Medical and vision
+            </div>
+            <div class="my-2">
+              <span class="text-cyan-400"
+                ><i class="fa-solid fa-circle-check"></i> </span
+              >HSAs and FSAs
+            </div>
+            <div class="my-2">
+              <span class="text-cyan-400"
+                ><i class="fa-solid fa-circle-check"></i> </span
+              >Life insurance
+            </div>
+            <div class="my-2">
+              <span class="text-cyan-400"
+                ><i class="fa-solid fa-circle-check"></i> </span
+              >Commuter benefits
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
