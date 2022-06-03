@@ -1,0 +1,20 @@
+.bg-1 {
+  background-color: #f9fbfd;
+  /* background-color: rebeccapurple; */
+}
+
+.height-1 {
+  height: 55vh;
+}
+
+.bg-card {
+  transition: 500ms;
+}
+.bg-card:hover {
+  transition: 500ms;
+
+  background-color: white;
+  box-shadow: 4px 4px 17px 0px rgba(143, 141, 141, 0.75);
+  -webkit-box-shadow: 4px 4px 17px 0px rgba(143, 141, 141, 0.75);
+  -moz-box-shadow: 4px 4px 17px 0px rgba(143, 141, 141, 0.75);
+}
